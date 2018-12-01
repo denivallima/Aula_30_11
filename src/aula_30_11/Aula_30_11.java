@@ -1,21 +1,44 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package aula_30_11;
 
-/**
- *
- * @author Aluno
- */
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+
 public class Aula_30_11 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+        public static void main(String[] args) {
+       
+            Aluno a1 = new Aluno("Maira", 25);
+            Aluno a2 = new Aluno("Maira", 25);
+            Aluno a3 = new Aluno("Maira", 25);
+            
+            
+            List<Aluno> listAluno = new ArrayList<>();
+//            listAluno.add(a1); 
+//            listAluno.add(a2);
+//            listAluno.add(a3);
+        listAluno.addAll(Arrays.asList(a1, a2, a3));
+        
+//            for (Aluno Listaluno1 : listAluno) {
+//                System.out.println(Listaluno1.getNone()
+//                + "\n" + Listaluno1.getIdade()
+//                );
+                
+                Set<Aluno> listAlunoSet = new HashSet<>();
+                  listAlunoSet.add(a1); 
+                  listAlunoSet.add(a2);
+                  listAlunoSet.add(a3);
+                
+              for (Aluno ListalunoSet1 : listAlunoSet) {
+                System.out.println(ListalunoSet1.getNone());
+            }
+              
+              
+
+        }
     
 }
